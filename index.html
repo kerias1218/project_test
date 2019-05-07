@@ -1,12 +1,985 @@
-<html>  
-    <head>
-        <style>
-            div {font-weight: bold; font-size: 20pt; color: blue;}
-        </style>
-    </head>
-    <body>
-        <div>hello world</div>
-        <pre>두번째 git 사용법</pre>
-        
-    </body>
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <!-- =====  BASIC PAGE NEEDS  ===== -->
+    <meta charset="utf-8">
+    <title>투어라인 샵::판촉몰</title>
+    <!-- =====  SEO MATE  ===== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="2 Days">
+    <meta name="robots" content="ALL">
+    <meta name="rating" content="8 YEARS">
+    <meta name="Language" content="kr">
+    <meta name="GOOGLEBOT" content="NOARCHIVE">
+    <!-- =====  MOBILE SPECIFICATION  ===== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width">
+    <!-- =====  CSS  ===== -->
+    <link rel="stylesheet" type="text/css" href="/erp/zones/css/mall/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/erp/zones/css/mall/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/erp/zones/css/mall/style.css">
+    <link rel="stylesheet" type="text/css" href="/erp/zones/css/mall/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="/erp/zones/css/mall/owl.carousel.css">
+    <link rel="shortcut icon" href="/erp/zones/images/mall/favicon.png">
+    <link rel="apple-touch-icon" href="/erp/zones/images/mall/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" p/zhref="/erp/zones/images/mall/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/erp/zones/images/mall/apple-touch-icon-114x114.png">
+</head>
+
+<body class="shop-detail">
+  <!-- =====  LODER  ===== -->
+  <div class="loder"></div>
+  <div class="wrapper">
+    <!-- =====  HEADER START  ===== -->
+    <header id="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <!--<div class="col-sm-6">
+              <ul class="header-top-left">
+                <li class="language dropdown"> <span class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"> <img src="/erp/zones/images/mall/kor.png" alt="img" style="margin-bottom:3px;"> 한국어 <span class="caret"></span> </span>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#"><img src="/erp/zones/images/mall/kor.png" alt="img"> 한국어</a></li>
+                    <li><a href="#"><img src="/erp/zones/images/mall/French-icon.gif" alt="img"> 영어</a></li>
+                    <li><a href="#"><img src="/erp/zones/images/mall/German-icon.gif" alt="img"> 중국어</a></li>
+                  </ul>
+                </li>
+                <li class="currency dropdown"> <span class="dropdown-toggle" id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"> KOR <span class="caret"></span> </span>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu12">
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">ENG</a></li>
+                    <li><a href="#">CHN</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>-->
+
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-header mtb_20"> <a class="navbar-brand" href="<?php echo site_url("Mall");?>"> <img alt="HealthCared" src="/erp/zones/images/mall/header_logo.png"> </a> </div>
+            <div class="header-right pull-right mtb_50">
+              <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse"> <span class="i-bar"><i class="fa fa-bars"></i></span></button>
+              <!--<div class="shopping-icon">
+                <div class="cart-item " data-target="#cart-dropdown" data-toggle="collapse" aria-expanded="true" role="button">Item's : <span class="cart-qty">02</span></div>
+                <div id="cart-dropdown" class="cart-menu collapse">
+                  <ul>
+                    <li>
+                      <table class="table table-striped">
+                        <tbody>
+                          <tr>
+                            <td class="text-center"><a href="#"><img src="/erp/zones/images/mall/product/70x84.jpg" alt="iPod Classic" title="iPod Classic"></a></td>
+                            <td class="text-left product-name"><a href="#">MacBook Pro</a>
+                              <span class="text-left price">$20.00</span>
+                              <input class="cart-qty" name="product_quantity" min="1" value="1" type="number">
+                            </td>
+                            <td class="text-center"><a class="close-cart"><i class="fa fa-times-circle"></i></a></td>
+                          </tr>
+                          <tr>
+                            <td class="text-center"><a href="#"><img src="/erp/zones/images/mall/product/70x84.jpg" alt="iPod Classic" title="iPod Classic"></a></td>
+                            <td class="text-left product-name"><a href="#">MacBook Pro</a>
+                              <span class="text-left price">$20.00</span>
+                              <input class="cart-qty" name="product_quantity" min="1" value="1" type="number">
+                            </td>
+                            <td class="text-center"><a class="close-cart"><i class="fa fa-times-circle"></i></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                    <li>
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <td class="text-right"><strong>Sub-Total</strong></td>
+                            <td class="text-right">$2,100.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                            <td class="text-right">$2.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-right"><strong>VAT (20%)</strong></td>
+                            <td class="text-right">$20.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-right"><strong>Total</strong></td>
+                            <td class="text-right">$2,122.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </li>
+                    <li>
+                      <form action="cart_page.html">
+                        <input class="btn pull-left mt_10" value="View cart" type="submit">
+                      </form>
+                      <form action="checkout_page.html">
+                        <input class="btn pull-right mt_10" value="Checkout" type="submit">
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+              </div>-->
+              <div class="main-search pull-right">
+                <div class="search-overlay">
+                  <!-- Close Icon -->
+                  <a href="javascript:void(0)" class="search-overlay-close"></a>
+                  <!-- End Close Icon -->
+                  <div class="container">
+                    <!-- Search Form -->
+                    <form role="search" id="searchform" action="/search" method="get">
+                      <label class="h5 normal search-input-label">Enter keywords To Search Entire Store</label>
+                      <input value="" name="q" placeholder="Search here..." type="search">
+                      <button type="submit"></button>
+                    </form>
+                    <!-- End Search Form -->
+                  </div>
+                </div>
+                <div class="header-search"> <a id="search-overlay-btn"></a> </div>
+              </div>
+            </div>
+          <div class="collapse navbar-collapse js-navbar-collapse pull-right">
+              <ul id="menu" class="nav navbar-nav">
+                <li> <a href="<?php echo site_url("Mall");?>">홈으로</a></li>
+                <!--<li> <a href="category_page.html">세일상품</a></li>-->
+                <!--<li> <a href="blog_page.html">블로그</a></li>-->
+                <li class="dropdown mega-dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">판촉제품 </a>
+                  <ul class="dropdown-menu mega-dropdown-menu row">
+                    <li class="col-md-3">
+                      <ul>
+                        <li class="dropdown-header">생활잡화</li>
+                        <li><a href="#">| 보조배터리</a></li>
+                        <li><a href="#">| 스마트폰악세서리</a></li>
+                        <li><a href="#">| 손톱깎이세트</a></li>
+                        <li><a href="#">| 핫팩/손난로</a></li>
+                        <li><a href="#">| 공구세트</a></li>
+                        <li><a href="#">| 칫솔/치약세트</a></li>
+                        <li><a href="#">| 통장지갑/통장케이스</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-md-3">
+                      <ul>
+                        <li class="dropdown-header">사무문구</li>
+                        <li><a href="#">| 디지털탁상시계</a></li>
+                        <li><a href="#">| 데스크용품</a></li>
+                        <li><a href="#">| 아동문구류</a></li>
+                        <li><a href="#">| USB메모리</a></li>
+                        <li><a href="#">| 원목사무용품</a></li>
+                        <li><a href="#">| 접착메모지(포스트잇)</a></li>
+                        <li><a href="#">| 신분증 줄/케이스</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-md-3">
+                      <ul>
+                        <li class="dropdown-header">선물세트</li>
+                        <li><a href="#">| 전통상품선물</a></li>
+                        <li><a href="#">| 양말선물세트</a></li>
+                        <li><a href="#">| 치약선물세트</a></li>
+                        <li><a href="#">| 오뚜기선물세트</a></li>
+                        <li><a href="#">| 화장품선물세트</a></li>
+                        <li><a href="#">| 가공육류선물세트</a></li>
+                        <li><a href="#">| 오일선물세트</a></li>
+                      </ul>
+                    </li>
+                    <li class="col-md-3">
+                      <ul>
+                        <li id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="item active"> <a href="#"><img src="/erp/zones/images/mall/product/open1.jpg" class="img-responsive" alt="Banner1"></a></div>
+                            <!-- End Item -->
+                            <div class="item"> <a href="#"><img src="/erp/zones/images/mall/product/open2.jpg" class="img-responsive" alt="Banner1"></a></div>
+                            <!-- End Item -->
+                            <!--<div class="item"> <a href="#"><img src="/erp/zones/images/mall/menu-banner3.jpg" class="img-responsive" alt="Banner1"></a></div>-->
+                            <!-- End Item -->
+                          </div>
+                          <!-- End Carousel Inner -->
+                        </li>
+                        <!-- /.carousel -->
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="account"><a href="login.html">MY정보</a></li>
+                <!--<li class="sitemap"><a href="#">사이트맵</a></li>-->
+                <li class="cart"><a href="cart_page.html">장바구니</a></li>
+                <!--<li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">나의정보 </a>
+                  <ul class="dropdown-menu">
+                    <li> <a href="contact_us.html">Contact us</a></li>
+                    <li> <a href="cart_page.html">Cart</a></li>
+                    <li> <a href="checkout_page.html">Checkout</a></li>
+                    <li> <a href="product_detail_page.html">Product Detail Page</a></li>
+                    <li> <a href="single_blog.html">Single Post</a></li>
+                  </ul>
+                </li>-->
+                <!--<li> <a href="about.html">회사소개</a></li>-->
+              </ul>
+            </div>
+            <!-- /.nav-collapse -->
+          </nav>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-3">
+              <div class="category">
+                <div class="menu-bar" data-target="#category-menu,#category-menu-responsive" data-toggle="collapse" aria-expanded="true" role="button">
+                  <h4 class="category_text">상단 카테고리</h4>
+                  <span class="i-bar"><i class="fa fa-bars"></i></span></div>
+              </div>
+              <div id="category-menu-responsive" class="navbar collapse " aria-expanded="true" style="" role="button">
+                <div class="nav-responsive">
+                  <ul class="nav  main-navigation collapse in">
+                <li><a href="#">캐리어</a></li>
+                <li><a href="#">편의용품</a></li>
+                <li><a href="#">레저/취미</a></li>
+                <li><a href="#">안전/위생</a></li>
+                <li><a href="#">보조백/여행용전자</a></li>
+                <li><a href="#">판촉물</a></li>
+                <li><a href="#">사무/인쇄물</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8 col-md-8 col-lg-9">
+              <div class="header-bottom-right offers">
+              	<div class="marquee"><span><i class="fa fa-circle" aria-hidden="true"></i>이번주 세일상품은 캐리어입니다.</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>미세먼지 관련 마스크 세일 중!</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>신규 네임택 입고 되었습니다!!</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>다음주 세일 상품은 ★지퍼백(소)★ 입니다.</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>영업시간 안내: 오전 09:00 - 오후 18:00</span>
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>상품관련 문의 및 안내: 02) 1566-3291</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- =====  HEADER END  ===== -->
+    <!-- =====  CONTAINER START  ===== -->
+    <div class="container">
+      <div class="row ">
+        <div id="column-left" class="col-sm-4 col-md-4 col-lg-3 hidden-xs">
+          <div id="category-menu" class="navbar collapse in  mb_40" aria-expanded="true" style="" role="button">
+            <div class="nav-responsive">
+              <ul class="nav  main-navigation collapse in">
+                <li><a href="#">캐리어</a></li>
+                <li><a href="#">편의용품</a></li>
+                <li><a href="#">레저/취미</a></li>
+                <li><a href="#">안전/위생</a></li>
+                <li><a href="#">보조백/여행용전자</a></li>
+                <li><a href="#">판촉물</a></li>
+                <li><a href="#">사무/인쇄물</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="left_banner left-sidebar-widget mt_30 mb_40"> <a href="#"><img src="/erp/zones/images/mall/left_banner.png" alt="Left Banner" class="img-responsive" /></a> </div>
+          <!--<div class="left-special left-sidebar-widget mb_50">
+            <div class="heading-part mb_20 ">
+              <h2 class="main_title">Top Products</h2>
+            </div>
+            <div id="left-special" class="owl-carousel">
+              <ul class="row ">
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href=".html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product1-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product2.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product2-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product3.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product3-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="row ">
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product4.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product4-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product5.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product5-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product6.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product6-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="row ">
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product7.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product7-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product8.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product8-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product9.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product9-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="row ">
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product10.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product10-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product1.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product1-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="item product-layout-left mb_20">
+                  <div class="product-list col-xs-4">
+                    <div class="product-thumb">
+                      <div class="image product-imageblock"> <a href="product_detail_page.html"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product2.jpg"> <img class="img-responsive" title="iPod Classic" alt="iPod Classic" src="/erp/zones/images/mall/product/product2-1.jpg"> </a> </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-8">
+                    <div class="caption product-detail">
+                      <h6 class="product-name"><a href="#">Latin literature from 45 BC, making it over old.</a></h6>
+                      <div class="rating">
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                      </div>
+                      <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>-->
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-9 mtb_30">
+          <!-- =====  BANNER STRAT  ===== -->
+          <div class="breadcrumb ptb_20">
+            <h1>가전제품</h1>
+            <ul>
+              <li><a href="index.html">메인</a></li>
+              <li><a href="category_page.html">가전제품</a></li>
+              <li class="active">[SanDisk]...</li>
+            </ul>
+          </div>
+          <!-- =====  BREADCRUMB END===== -->
+          <div class="row mt_10 ">
+            <div class="col-md-6">
+              <div><a class="thumbnails"> <img data-name="product_image" src="/erp/zones/images/mall/product/product1.jpg" alt="" /></a></div>
+              <div id="product-thumbnail" class="owl-carousel">
+                <div class="item">
+                  <div class="image-additional"><a class="thumbnail" href="/erp/zones/images/mall/product/product1.jpg" data-fancybox="group1"> <img src="/erp/zones/images/mall/product/product1.jpg" alt="" /></a></div>
+                </div>
+                <div class="item">
+                  <div class="image-additional"><a class="thumbnail" href="/erp/zones/images/mall/product/product2.jpg" data-fancybox="group1"> <img src="/erp/zones/images/mall/product/product2.jpg" alt="" /></a></div>
+                </div>
+                <div class="item">
+                  <div class="image-additional"><a class="thumbnail" href="/erp/zones/images/mall/product/product3.jpg" data-fancybox="group1"> <img src="/erp/zones/images/mall/product/product3.jpg" alt="" /></a></div>
+                </div>
+                <div class="item">
+                  <div class="image-additional"><a class="thumbnail" href="/erp/zones/images/mall/product/product4.jpg" data-fancybox="group1"> <img src="/erp/zones/images/mall/product/product4.jpg" alt="" /></a></div>
+                </div>
+                <div class="item">
+                  <div class="image-additional"><a class="thumbnail" href="/erp/zones/images/mall/product/product5.jpg" data-fancybox="group1"> <img src="/erp/zones/images/mall/product/product5.jpg" alt="" /></a></div>
+                </div>
+                <div class="item">
+                  <div class="image-additional"><a class="thumbnail" href="/erp/zones/images/mall/product/product6.jpg" data-fancybox="group1"> <img src="/erp/zones/images/mall/product/product6.jpg" alt="" /></a></div>
+                </div>
+                <div class="item">
+                  <div class="image-additional"><a class="thumbnail" href="/erp/zones/images/mall/product/product7.jpg" data-fancybox="group1"> <img src="/erp/zones/images/mall/product/product7.jpg" alt="" /></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 prodetail caption product-thumb">
+              <h4 data-name="product_name" class="product-name"><a href="#" title="Casual Shirt With Ruffle Hem">[SanDisk] USB, 울트라 플레어 [16GB/메탈실버]</a></h4>
+              <div class="rating">
+                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+              </div>
+              <span class="price mb_20"><span class="amount"><span class="currencySymbol">14,110</span>원</span>
+              </span>
+              <hr>
+              <ul class="list-unstyled product_info mtb_20">
+                <li>
+                  <label>제조사:</label>
+                  <span> <a href="#">SanDisk</a></span></li>
+                <li>
+                  <label>제품코드:</label>
+                  <span> 17513978</span></li>
+                <li>
+                  <label>재고여부:</label>
+                  <span> 재고있음</span></li>
+              </ul>
+              <hr>
+              <p class="product-desc mtb_30"> SanDisk Ultra Flair USB3.0 플래시 드라이브를 사용하면 파일이 더욱 빠르게 전송됩니다. 파일 전송에 드는 시간을 줄이고 최대150MB/s의 고속 USB3.0 성능을 활용하세요. 내구성이 좋고 날렵한 금속 케이스를 채택하고 있어 스타일과 견고함이 모두 살아납니다. 또한 암호로 보호되기 때문에 개인 정보가 저장된 파일을 기밀로 유지할 수 있습니다. 스타일이 살아있는 플래시 드라이브에 파일을 저장하십시오.</p>
+              <div id="product">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="Sort-by col-md-6">
+                      <label>용량</label>
+                      <select name="product_size" id="select-by-size" class="selectpicker form-control">
+                        <option>16G</option>
+                        <option>32G</option>
+                        <option>68G</option>
+                      </select>
+                    </div>
+                    <div class="Color col-md-6">
+                      <label>색상</label>
+                      <select name="product_color" id="select-by-color" class="selectpicker form-control">
+                        <option>파랑</option>
+                        <option>초록</option>
+                        <option>노랑</option>
+                        <option>검정</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="qty mt_30 form-group2">
+                  <label>수량</label>
+                  <input name="product_quantity" min="1" value="1" type="number">
+                </div>
+                <div class="button-group mt_20" style="display: inline-block">
+                  <div class="add-to-cart"><a href="/Mall/welcome/cart_page"><span>장바구니에 담기</span></a></div>
+                  <div class="wishlist"><a href="#"><span>위시리스트</span></a></div>
+                  <div class="compare"><a href="#"><span>비교하기</span></a></div>
+                </div>
+                <form action="/Mall/welcome/cart_page">
+            <input class="btn pull-left mt_30" type="submit" value="구매하기" />
+          </form>
+                <!--<a href="/Mall/welcome/cart_page" style="font-size:14px; color:#000000; float:right; border:1px solid #555555; padding:5px 10px; margin-top:30px">구매하기</a>-->
+
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="exTab5" class="mtb_30">
+                <ul class="nav nav-tabs">
+                  <li class="active"> <a href="#1c" data-toggle="tab">미리보기</a> </li>
+                  <li><a href="#2c" data-toggle="tab">제품후기 (1)</a> </li>
+                  <li><a href="#3c" data-toggle="tab">해결방안</a> </li>
+                </ul>
+                <div class="tab-content mt_20">
+                  <div class="tab-pane active" id="1c">
+                    <p><img src="/erp/zones/images/mall/1.jpg" alt="SanDisk" title="SanDisk" class="img-responsive"></p>
+                  </div>
+                  <div class="tab-pane" id="2c">
+                    <form class="form-horizontal">f
+                      <div id="review"></div>
+                      <h4 class="mt_20 mb_30">Write a review</h4>
+                      <div class="form-group required">
+                        <div class="col-sm-12">
+                          <label class="control-label" for="input-name">Your Name</label>
+                          <input name="name" value="" id="input-name" class="form-control" type="text">
+                        </div>
+                      </div>
+                      <div class="form-group required">
+                        <div class="col-sm-12">
+                          <label class="control-label" for="input-review">Your Review</label>
+                          <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                          <div class="help-block"><span class="text-danger">Note:</span> HTML is not translated!</div>
+                        </div>
+                      </div>
+                      <div class="form-group required">
+                        <div class="col-md-6">
+                          <label class="control-label">Rating</label>
+                          <div class="rates"><span>Bad</span>
+                            <input name="rating" value="1" type="radio">
+                            <input name="rating" value="2" type="radio">
+                            <input name="rating" value="3" type="radio">
+                            <input name="rating" value="4" type="radio">
+                            <input name="rating" value="5" type="radio">
+                            <span>Good</span></div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="buttons pull-right">
+                            <button class="btn btn-md btn-link">Continue</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane" id="3c">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis malesuada mi id tristique. Sed ipsum nisi, dapibus at faucibus non, dictum a diam. Nunc vitae interdum diam. Sed finibus, justo vel maximus facilisis, sapien turpis euismod tellus, vulputate semper diam ipsum vel tellus.applied clearfix to the tab-content to rid of the gap between the tab and the content</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--<div class="row">
+            <div class="col-md-12">
+              <div class="heading-part text-center">
+                <h2 class="main_title mt_50">Related Products</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="product-layout  product-grid related-pro  owl-carousel mb_50">
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="/erp/zones/images/mall/product/product2.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="/erp/zones/images/mall/product/product2-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                    </span>
+                    <div class="button-group text-center">
+                      <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
+                      <div class="quickview"><a href="#"><span>Quick View</span></a></div>
+                      <div class="compare"><a href="#"><span>Compare</span></a></div>
+                      <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="/erp/zones/images/mall/product/product3.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="/erp/zones/images/mall/product/product3-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                    </span>
+                    <div class="button-group text-center">
+                      <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
+                      <div class="quickview"><a href="#"><span>Quick View</span></a></div>
+                      <div class="compare"><a href="#"><span>Compare</span></a></div>
+                      <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="/erp/zones/images/mall/product/product4.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="/erp/zones/images/mall/product/product4-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                    </span>
+                    <div class="button-group text-center">
+                      <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
+                      <div class="quickview"><a href="#"><span>Quick View</span></a></div>
+                      <div class="compare"><a href="#"><span>Compare</span></a></div>
+                      <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="/erp/zones/images/mall/product/product6.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="/erp/zones/images/mall/product/product6-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                    </span>
+                    <div class="button-group text-center">
+                      <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
+                      <div class="quickview"><a href="#"><span>Quick View</span></a></div>
+                      <div class="compare"><a href="#"><span>Compare</span></a></div>
+                      <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="/erp/zones/images/mall/product/product7.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="/erp/zones/images/mall/product/product7-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                    </span>
+                    <div class="button-group text-center">
+                      <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
+                      <div class="quickview"><a href="#"><span>Quick View</span></a></div>
+                      <div class="compare"><a href="#"><span>Compare</span></a></div>
+                      <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="product-thumb">
+                  <div class="image product-imageblock"> <a href="product_detail_page.html"> <img data-name="product_image" src="/erp/zones/images/mall/product/product8.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> <img src="/erp/zones/images/mall/product/product8-1.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive"> </a> </div>
+                  <div class="caption product-detail text-left">
+                    <h6 data-name="product_name" class="product-name mt_20"><a href="#" title="Casual Shirt With Ruffle Hem">Latin literature from 45 BC, making it over old.</a></h6>
+                    <div class="rating">
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-1x"></i></span>
+                      <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i><i class="fa fa-star fa-stack-x"></i></span>
+                    </div>
+                    <span class="price"><span class="amount"><span class="currencySymbol">$</span>70.00</span>
+                    </span>
+                    <div class="button-group text-center">
+                      <div class="wishlist"><a href="#"><span>wishlist</span></a></div>
+                      <div class="quickview"><a href="#"><span>Quick View</span></a></div>
+                      <div class="compare"><a href="#"><span>Compare</span></a></div>
+                      <div class="add-to-cart"><a href="#"><span>Add to cart</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <!--<div id="brand_carouse" class="ptb_30 text-center">
+        <div class="type-01">
+          <div class="heading-part mb_20 ">
+            <h2 class="main_title">Brand Logo</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="brand owl-carousel ptb_20">
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand1.png" alt="Disney" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand2.png" alt="Dell" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand3.png" alt="Harley" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand4.png" alt="Canon" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand5.png" alt="Canon" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand6.png" alt="Canon" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand7.png" alt="Canon" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand8.png" alt="Canon" class="img-responsive" /></a> </div>
+                <div class="item text-center"> <a href="#"><img src="/erp/zones/images/mall/brand/brand9.png" alt="Canon" class="img-responsive" /></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+    </div>
+    <!-- =====  CONTAINER END  ===== -->
+    <!-- =====  FOOTER START  ===== -->
+    <div class="footer pt_60">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 footer-block" style="text-align:center;">
+            <div class="content_footercms_right">
+              <div class="footer-contact">
+                <div class="footer-logo mb_40"> <a href="<?php echo site_url("Mall");?>"> <img src="/erp/zones/images/mall/header_logo.png" alt="HealthCare"> </a> </div>
+                <ul>
+                  <li>서울특별시 마포구 월드컵북로 2길 82</li>
+                  <li>(+82) 324 7734 - (+82) 324 7735</li>
+                  <li>tourline1004@gmail.com</li>
+                </ul>
+                <!--<div class="social_icon">
+                  <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                  </ul>
+                </div>-->
+              </div>
+            </div>
+          </div>
+          <!--<div class="col-md-2 footer-block">
+            <h6 class="footer-title ptb_20">카테고리</h6>
+            <ul>
+              <li><a href="#">캐리어</a></li>
+              <li><a href="#">편의용품</a></li>
+              <li><a href="#">레저/취미</a></li>
+              <li><a href="#">안전/위생</a></li>
+              <li><a href="#">판촉물</a></li>
+              <li><a href="#">사무/인쇄물</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 footer-block">
+            <h6 class="footer-title ptb_20">회사소개</h6>
+            <ul>
+              <li><a href="contact.html">Specials</a></li>
+              <li><a href="#">브랜드스토리</a></li>
+              <li><a href="#">CEO메시지</a></li>
+              <li><a href="#">투어라인몰이란?</a></li>
+              <li><a href="#">연락처 및 약도</a></li>
+              <li><a href="#">사회가치경영</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2 footer-block">
+            <h6 class="footer-title ptb_20">계정정보</h6>
+            <ul>
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">나의 계정</a></li>
+              <li><a href="#">나의 주문</a></li>
+              <li><a href="#">나의 결제정보</a></li>
+              <li><a href="#">배송주소</a></li>
+              <li><a href="#">개인정보 변경</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="ptb_20">가입하고 뉴스레터 받기</h6>
+            <p class="mt_10 mb_20">가입하신 후에 뉴스레터 받기를 신청하시면 20%할인 쿠폰을 이메일로 보내드립니다, </p>
+            <div class="form-group">
+              <input class="mb_20" type="text" placeholder="E-mail 주소를 입력하세요.">
+              <button class="btn">소식받기</button>
+            </div>
+          </div>-->
+        </div>
+      </div>
+      <div class="footer-bottom mt_60 ptb_10">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="copyright-part">@ 2019 All Rights Reserved Tourline</div>
+            </div>
+            <div class="col-sm-6">
+              <div class="payment-icon text-right">
+                <ul>
+                  <li><i class="fa fa-cc-paypal "></i></li>
+                  <li><i class="fa fa-cc-stripe"></i></li>
+                  <li><i class="fa fa-cc-visa"></i></li>
+                  <li><i class="fa fa-cc-discover"></i></li>
+                  <li><i class="fa fa-cc-mastercard"></i></li>
+                  <li><i class="fa fa-cc-amex"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  FOOTER END  ===== -->
+  <a id="scrollup">Scroll</a>
+  <script src="/erp/zones/js/mall/jQuery_v3.1.1.min.js"></script>
+  <script src="/erp/zones/js/mall/owl.carousel.min.js"></script>
+  <script src="/erp/zones/js/mall/bootstrap.min.js"></script>
+  <script src="/erp/zones/js/mall/jquery.magnific-popup.js"></script>
+  <script src="/erp/zones/js/mall/jquery.firstVisitPopup.js"></script>
+  <script src="/erp/zones/js/mall/custom.js"></script>
+</body>
+
 </html>
